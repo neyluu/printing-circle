@@ -1,10 +1,5 @@
 #include <iostream>
-#include <math.h>
-#include <fstream>
-#include <string>
-#include <vector>
 
-#include "src/utils.h"
 #include "src/circle.h"
 
 int main()
@@ -17,4 +12,8 @@ int main()
     circle1.c = '#';
     circle1.generateOnlyEdge();
     circle1.consolePrint();
+    circle1.saveToFile("out.txt");
+    circle1.radius = 100;
+    circle1.generateFull();
+    circle1.saveToFile("out2.txt");
 }

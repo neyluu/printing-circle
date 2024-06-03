@@ -1,9 +1,10 @@
 #ifndef PRINTING_CIRCLE_CIRCLE_H
 #define PRINTING_CIRCLE_CIRCLE_H
 
-#include <istream>
+#include <iostream>
 #include <string>
 #include <vector>
+#include <fstream>
 
 class Circle
 {
@@ -18,6 +19,7 @@ public:
     void generateFull();
     void generateOnlyEdge();
     void consolePrint();
+    int saveToFile(const std::string& filename);
 };
 
 #endif //PRINTING_CIRCLE_CIRCLE_H

@@ -1,4 +1,3 @@
-#include <cmath>
 #include "utils.h"
 
 float distance2Points(int x1, int y1, float x2, float y2)

@@ -1,6 +1,8 @@
 #ifndef PRINTING_CIRCLE_UTILS_H
 #define PRINTING_CIRCLE_UTILS_H
 
+#include <cmath>
+
 float distance2Points(int x1, int y1, float x2, float y2);
 float getCenter(int radius);
 

@@ -1,4 +1,3 @@
-#include <iostream>
 #include "circle.h"
 #include "utils.h"
 
@@ -60,4 +59,20 @@ void Circle::consolePrint()
     {
         std::cout << circle[i] << std::endl;
     }
+}
+
+int Circle::saveToFile(const std::string& filename)
+{
+    std::ofstream file;
+    file.open(filename);
+
+    if(!file.is_open()) return -1;
+
+    for(int i = 0; i < circle.size(); i++)
+    {
+        file << circle[i] << std::endl;
+    }
+
+    file.close();
+    return 0;
 }
