@@ -17,6 +17,7 @@ public:
     Circle(int radius, int borderWidth, char c, bool antialiasing);
     void generateFull();
     void generateOnlyEdge();
+    void consolePrint();
 };
 
 #endif //PRINTING_CIRCLE_CIRCLE_H

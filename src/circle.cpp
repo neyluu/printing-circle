@@ -12,6 +12,8 @@ Circle::Circle(int radius, int borderWidth, char c, bool antialiasing)
 
 void Circle::generateFull()
 {
+    circle.clear();
+
     float center = getCenter(radius);
     float distance;
 
@@ -32,6 +34,8 @@ void Circle::generateFull()
 
 void Circle::generateOnlyEdge()
 {
+    circle.clear();
+
     float center = getCenter(radius);
     float distance;
 
@@ -47,5 +51,13 @@ void Circle::generateOnlyEdge()
             else row.push_back(' ');
         }
         circle.push_back(row);
+    }
+}
+
+void Circle::consolePrint()
+{
+    for(int i = 0; i < circle.size(); i++)
+    {
+        std::cout << circle[i] << std::endl;
     }
 }
